@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gizlilik Politikası — Adliye Asistanı</title>
+<style>
+  :root {
+    --arka: #f4f7f9;
+    --kart: #ffffff;
+    --metin: #1a2530;
+    --ikincil: #52606d;
+    --vurgu: #29323c;
+    --cizgi: #e2e8f0;
+    --uyari-arka: #fff4e5;
+    --uyari-cizgi: #f0b429;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--arka);
+    color: var(--metin);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    padding: 24px 16px 64px;
+  }
+  .kapsayici {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  header {
+    background: var(--vurgu);
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 6px; font-size: 24px; letter-spacing: 0.3px; }
+  header .altbaslik { color: #cfd8e3; font-size: 14px; }
+  .kart {
+    background: var(--kart);
+    border: 1px solid var(--cizgi);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--cizgi);
+  }
+  h3 { font-size: 15px; margin: 18px 0 6px; color: var(--vurgu); }
+  p { margin: 8px 0; color: var(--ikincil); }
+  ul { margin: 8px 0; padding-left: 22px; color: var(--ikincil); }
+  li { margin: 5px 0; }
+  a { color: #2b6cb0; word-break: break-word; }
+  .uyari {
+    background: var(--uyari-arka);
+    border: 1px solid var(--uyari-cizgi);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin: 14px 0;
+    color: #7a5b00;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .dil-etiket {
+    display: inline-block;
+    background: var(--vurgu);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 4px;
+  }
+  .tarih { font-size: 13px; color: var(--ikincil); text-align: center; margin-top: 4px; }
+  hr.bolucu { border: none; border-top: 1px dashed var(--cizgi); margin: 40px 0; }
+  footer { text-align: center; font-size: 12px; color: var(--ikincil); margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="kapsayici">
+
+  <header>
+    <h1>Gizlilik Politikası</h1>
+    <div class="altbaslik">Adliye Asistanı</div>
+  </header>
+  <p class="tarih">Yürürlük tarihi: 8 Temmuz 2026 · Son güncelleme: 8 Temmuz 2026</p>
+
+  <!-- ================= TÜRKÇE ================= -->
+  <div class="kart">
+    <span class="dil-etiket">TÜRKÇE</span>
+    <p>
+      Adliye Asistanı ("Uygulama"), Salih Murat Atal ("Geliştirici") tarafından bir hukuki
+      hesaplama ve üretkenlik aracı olarak sunulmaktadır. Uygulama; T.C. Adalet Bakanlığı,
+      UYAP veya herhangi bir resmî devlet kurumu ile bağlantılı, sponsorlu ya da onaylı
+      değildir; tamamen bağımsız bir teknoloji aracıdır.
+    </p>
+
+    <div class="uyari">
+      Önemli: Uygulamaya veri girerken veya evrak okuturken T.C. Kimlik Numarası, ad-soyad,
+      sicil bilgisi ve özellikle gizlilik kararı bulunan dosya evraklarını mutlaka
+      sansürleyiniz. Sisteme girdiğiniz veriler, aşağıda açıklanan yapay zeka servisi
+      üzerinden işlenir.
+    </div>
+
+    <h2>1. İşlenen Veriler ve Yapay Zeka</h2>
+    <p>
+      Uygulama, hukuki metinleri ve tebligat/evrak fotoğraflarını analiz etmek için
+      <strong>Google Gemini API</strong> servisini kullanır. Kullanıcı tarafından yazılan
+      metinler ile kamerayla çekilen veya yüklenen evrak görselleri, yalnızca o anki yapay
+      zeka analizini gerçekleştirmek amacıyla Google sunucularına iletilir. Bu içerikler
+      Geliştirici tarafından sunucularda <strong>depolanmaz</strong>, kaydedilmez veya üçüncü
+      şahıslara <strong>satılmaz</strong>. Google'ın bu verileri işleme esasları için:
+      <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Şartları</a>.
+    </p>
+
+    <h2>2. Cihaz İzinleri</h2>
+    <ul>
+      <li><strong>Kamera:</strong> Yalnızca tebligat/evrak görsellerini okumak için, siz talep ettiğinizde kullanılır.</li>
+      <li><strong>Mikrofon:</strong> Yalnızca sesli not yazdırma (konuşmayı metne çevirme) özelliği için anlık olarak kullanılır.</li>
+    </ul>
+
+    <h2>3. Yerel Depolama</h2>
+    <p>
+      Uygulama içi geri sayımlar, taslaklar ve tercihleriniz yalnızca cihazınızın kendi
+      hafızasında (SharedPreferences) tutulur; Geliştiriciye aktarılmaz. Uygulamayı
+      kaldırdığınızda bu yerel veriler silinir.
+    </p>
+
+    <h2>4. Hata ve Çökme Raporlama (Sentry)</h2>
+    <p>
+      Uygulamanın kararlılığını iyileştirmek amacıyla, oluşan teknik hatalar ve çökmeler
+      <strong>Sentry</strong> hizmeti aracılığıyla kaydedilir. Gizliliğinize önem verdiğimiz
+      için IP adresi, cihaz kimliği gibi kişisel tanımlayıcı veriler bu raporlara
+      <strong>dahil edilmez</strong> (sendDefaultPii kapalıdır). Raporlar yalnızca hatanın
+      teknik ayrıntılarını içerir.
+    </p>
+
+    <h2>5. İçtihat ve Mevzuat Sorgulama</h2>
+    <p>
+      İçtihat arama özelliği, sorgunuzu yanıtlamak için harici sunuculara (barındırma servisi
+      ve Adalet Bakanlığı'nın kamuya açık içtihat servisi) istek gönderebilir. Bu sorgular
+      kişisel verilerinizi içermez; yalnızca aradığınız hukuki terim/ifade iletilir.
+    </p>
+
+    <h2>6. Reklamlar</h2>
+    <p>
+      Uygulama, <strong>Google AdMob</strong> aracılığıyla <strong>kişiselleştirilmemiş</strong>
+      afiş ve geçiş reklamları gösterebilir. AdMob, reklam sunumu için cihazınızın reklam
+      kimliğini kullanabilir. Google'ın reklamlarda veri kullanımı için:
+      <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Reklam Politikaları</a>.
+    </p>
+
+    <h2>7. Çocukların Gizliliği</h2>
+    <p>
+      Uygulama, hukuk ve adliye alanında çalışan yetişkin kullanıcılara yöneliktir ve
+      13 yaşın altındaki çocuklara yönelik değildir; bu kişilerden bilerek veri toplanmaz.
+    </p>
+
+    <h2>8. Haklarınız (KVKK)</h2>
+    <p>
+      6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki haklarınızı kullanmak,
+      soru sormak veya talepte bulunmak için aşağıdaki iletişim adresinden Geliştiriciye
+      ulaşabilirsiniz.
+    </p>
+
+    <h2>9. İletişim</h2>
+    <p>
+      Geliştirici: Salih Murat Atal<br>
+      E-posta: <a href="mailto:smuratatal@gmail.com">smuratatal@gmail.com</a>
+    </p>
+
+    <h2>10. Değişiklikler</h2>
+    <p>
+      Bu gizlilik politikası zaman zaman güncellenebilir. Güncellemeler bu sayfada yayınlanır
+      ve yürürlük tarihi buna göre değiştirilir.
+    </p>
+  </div>
+
+  <hr class="bolucu">
+
+  <!-- ================= ENGLISH ================= -->
+  <div class="kart">
+    <span class="dil-etiket">ENGLISH</span>
+    <p>
+      Adliye Asistanı ("The App") is provided by Salih Murat Atal ("Developer") as a legal
+      calculation and productivity tool. The App is not affiliated with, sponsored by, or
+      endorsed by the Turkish Ministry of Justice, UYAP, or any official government body; it
+      is an entirely independent technology tool.
+    </p>
+
+    <div class="uyari">
+      Important: When entering data or scanning documents, always redact national ID numbers,
+      full names, registry information, and especially any confidential case files. Data you
+      enter is processed via the AI service described below.
+    </div>
+
+    <h2>1. Data Processing &amp; AI</h2>
+    <p>
+      The App uses the <strong>Google Gemini API</strong> to analyze legal texts and
+      document/notification images. Text you enter and images captured or uploaded by you are
+      transmitted to Google's servers strictly to perform the requested AI analysis in
+      real-time. This content is <strong>not stored</strong> on the Developer's servers and is
+      <strong>never sold</strong> to third parties. See Google's terms:
+      <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms</a>.
+    </p>
+
+    <h2>2. Device Permissions</h2>
+    <ul>
+      <li><strong>Camera:</strong> Used solely to scan notification/case documents, only when you request it.</li>
+      <li><strong>Microphone:</strong> Used strictly for speech-to-text note dictation, on demand.</li>
+    </ul>
+
+    <h2>3. Local Storage</h2>
+    <p>
+      Your in-app countdowns, drafts, and preferences are stored only on your device
+      (SharedPreferences) and are not transmitted to the Developer. Uninstalling the App
+      deletes this local data.
+    </p>
+
+    <h2>4. Error &amp; Crash Reporting (Sentry)</h2>
+    <p>
+      To improve stability, technical errors and crashes are logged via <strong>Sentry</strong>.
+      To protect your privacy, personally identifying data such as IP address or device
+      identifiers is <strong>not included</strong> in these reports (sendDefaultPii is
+      disabled). Reports contain only the technical details of the error.
+    </p>
+
+    <h2>5. Case-Law &amp; Legislation Queries</h2>
+    <p>
+      The case-law search feature may send requests to external servers (a hosting service and
+      the Ministry of Justice's public case-law service) to fulfill your query. These queries
+      do not contain your personal data; only the legal term/phrase you search is transmitted.
+    </p>
+
+    <h2>6. Advertising</h2>
+    <p>
+      The App may serve <strong>non-personalized</strong> banner and interstitial
+      advertisements via <strong>Google AdMob</strong>, which may use your device's advertising
+      identifier to serve ads. See
+      <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Policies</a>.
+    </p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>
+      The App is intended for adult users working in the legal field and is not directed to
+      children under 13; no data is knowingly collected from them.
+    </p>
+
+    <h2>8. Your Rights</h2>
+    <p>
+      To exercise your rights under applicable data protection law (including Turkey's KVKK
+      No. 6698), ask questions, or make requests, contact the Developer at the address below.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      Developer: Salih Murat Atal<br>
+      Email: <a href="mailto:smuratatal@gmail.com">smuratatal@gmail.com</a>
+    </p>
+
+    <h2>10. Changes</h2>
+    <p>
+      This privacy policy may be updated from time to time. Updates will be posted on this page
+      and the effective date will be revised accordingly.
+    </p>
+  </div>
+
+  <footer>
+    © 2026 Salih Murat Atal · Adliye Asistanı
+  </footer>
+
+</div>
+</body>
+</html>
